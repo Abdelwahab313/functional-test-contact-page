@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="5">
+
+  <testsuite name="contact"
+    errors="1" failures="0" hostname="" id="" package="contact" skipped="0"
+    tests="5" time="10.98" timestamp="Wed, 21 Feb 2018 11:14:57 GMT">
+  
+    <testcase name="Form fields exist" classname="contact" time="3.121" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Form submit button disabled with empty data " classname="contact" time="2.526" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Form submit button disabled with invalid email " classname="contact" time="2.637" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Form submit button enabled with valid data" classname="contact" time="2.689" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Form submit button get results when submitting" classname="contact" time="0.009000" assertions="0">
+    </testcase>
+  
+
+  
+    <system-err>
+        Error while running [Contact / Form submit button get results when submitting]:
+
+  ReferenceError: cl is not defined
+    at Object.Form submit button get results when submitting (/home/abdelwahab/projects/react-apps/fn-contact-page/tests/contact.js:51:5)
+    at Module.call (/home/abdelwahab/projects/react-apps/fn-contact-page/node_modules/nightwatch/lib/runner/module.js:62:34)
+    at /home/abdelwahab/projects/react-apps/fn-contact-page/node_modules/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/home/abdelwahab/projects/react-apps/fn-contact-page/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/home/abdelwahab/projects/react-apps/fn-contact-page/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/home/abdelwahab/projects/react-apps/fn-contact-page/node_modules/q/q.js:796:13)
+    at /home/abdelwahab/projects/react-apps/fn-contact-page/node_modules/q/q.js:556:49
+    at runSingle (/home/abdelwahab/projects/react-apps/fn-contact-page/node_modules/q/q.js:137:13)
+    at flush (/home/abdelwahab/projects/react-apps/fn-contact-page/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    </system-err>
+  
+
+  
+  </testsuite>
+</testsuites>
