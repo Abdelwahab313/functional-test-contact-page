@@ -4,11 +4,11 @@
 
   "selenium" : {
     "start_process" : true,
-    "server_path" : "./bin/selenium-server-standalone-3.9.1.jar",
+    "server_path" : "[REPLACE BY ACTUAL PATH TO SELENIUM SERVER .jar]",
     "log_path" : "",
     "port" : 4444,
     "cli_args" : {
-      "webdriver.chrome.driver" : "./bin/chromedriver"
+      "webdriver.chrome.driver" : "[REPLACE BY YOUR WEBDRIVER --ex: chrome webdriver]"
     }
   },
 

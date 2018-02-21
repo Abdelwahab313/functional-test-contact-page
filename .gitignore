@@ -6,4 +6,8 @@ node_modules/
 bin/
 
 ## The reports  from nightwatch
-.reports/
+reports/
+
+## Selenium logs
+
+selenium-debug.log

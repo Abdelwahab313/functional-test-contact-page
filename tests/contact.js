@@ -7,7 +7,7 @@ module.exports = {
       .assert.visible('input[type=email]')
       .waitForElementVisible('input[type=submit]', 5000)
       .assert.visible('input[type=submit]')
-      .pause(500)
+      .pause(1000)
   },
 
   'Form submit button disabled with empty data ' : function (client) {
@@ -17,7 +17,7 @@ module.exports = {
       .setValue('input[name=fname]', '')
       .setValue('input[name=email]', '')
       .waitForElementVisible('input[type=submit]', 5000)
-      .pause(2000)
+      .pause(1000)
       .assert.attributeContains('input[type=submit]', 'disabled', 'true' )
       .end()  
   },
@@ -55,9 +55,10 @@ module.exports = {
       .setValue('input[name=fname]', 'TestName')
       .setValue('input[name=email]', 'test@mail.com')
       .waitForElementVisible('input[type=submit]', 5000)
-      .pause(1000);
-      .click('input[type=submit]')
-      
+      .pause(1000)
+      .click('input[type=submit]') 
+      .assert.visible('span.submitted')  
       client.end();
-  }
+  },
+
 }
